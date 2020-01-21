@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <script src="vguiSDK.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <input type="range" v-model="freq" v-on:change="fchange">
+        <span>{{ freq }}</span>
+        <input type="range" v-model="amp" v-on:change="achange">
+        <span>{{ amp }}</span>
+
+    </div>
+    <div id="plot"></div>
+</body>
+
+</html>
